@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xharktank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="header">
+        <img src="./Images/crioLogo.png" alt="logo" />
+        <p>CRIO.DO</p>
+      </div>
+      <div class="inner-div">
+        <div class="identity">
+          <p onclick="showEntrepreneur()">I'm an Entrepreneur</p>
+          <h5>OR</h5>
+          <p onclick="showInvestor()">I'm an Investor</p>
+        </div>
+        <div class="entrepreneur">
+          <span class="back" onclick="back('entrepreneur')">←</span>
+          <p>Tap the <b>Pitch Your Idea</b> button to create a new pitch.</p>
+          <span class="btn pitch" onclick="pitchIdea()">
+            <b>+</b> Pitch Your Idea</span
+          >
+        </div>
+        <div class="investor">
+          <span class="back" onclick="back('investor')">←</span>
+          <div class="all-pitches">
+            <div class="pitch-post">
+              <h1>Uber for Pets</h1>
+              <h2>Peter Pan</h2>
+              <hr />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur vel repellat, dolorum inventore, reprehenderit, cum
+                assumenda sed provident corporis officia blanditiis adipisci non
+                laboriosam nihil accusantium odit harum expedita nam!
+              </h3>
+              <p>Shark willing to offer 10%</p>
+              <p>Asked Amount 25,00,000</p>
+              <div class="offers">
+                <span><b>No</b> investment offers till now</span>
+                <div class="invest">+ Invest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pitch-form-container">
+          <div class="pitch-form">
+            <div class="close" onclick="closeContainer('pitch-form-container')">
+              x
+            </div>
+            <label for="name">Entrepreneur Name :</label>
+            <input type="text" name="name" id="name" />
+            <label for="title">Title of the Pitch :</label>
+            <input type="text" name="title" id="title" />
+            <label for="business-idea">Business Idea for the Product :</label>
+            <textarea
+              name="business-idea"
+              id="business-idea"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <!-- <input type="text" name="business-idea" id="business-idea" /> -->
+            <label for="expected-amount"
+              >Expected Amount for investment :</label
+            >
+            <input type="number" name="expected-amount" id="expected-amount" />
+            <label for="equity-percentage"
+              >Percentage of Equity to be diluted :
+            </label>
+            <input
+              type="number"
+              name="equity-percentage"
+              id="equity-percentage"
+            />
+            <span class="btn submit-pitch">Submit Pitch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
