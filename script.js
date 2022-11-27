@@ -26,6 +26,12 @@ const pitchIdea = () => {
   className.style.display = "flex";
 };
 
+const invest = () => {
+  const className = document.querySelector(".invest-form-container");
+  className.style.height = "130%";
+  className.style.display = "flex";
+};
+
 function closeContainer(cName) {
   const className = document.querySelector(`.${cName}`);
   className.style.height = "0";

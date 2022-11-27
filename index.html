@@ -40,10 +40,10 @@
                 laboriosam nihil accusantium odit harum expedita nam!
               </h3>
               <p>Shark willing to offer 10%</p>
-              <p>Asked Amount 25,00,000</p>
+              <p>Asked Amount ₹25,00,000</p>
               <div class="offers">
                 <span><b>No</b> investment offers till now</span>
-                <div class="invest">+ Invest</div>
+                <div class="invest" onclick="invest()">+ Invest</div>
               </div>
             </div>
           </div>
@@ -78,6 +78,38 @@
               id="equity-percentage"
             />
             <span class="btn submit-pitch">Submit Pitch</span>
+          </div>
+        </div>
+        <div class="invest-form-container">
+          <div class="invest-form">
+            <div
+              class="close"
+              onclick="closeContainer('invest-form-container')"
+            >
+              x
+            </div>
+            <label for="uid">Unique ID :</label>
+            <input type="text" name="uid" id="uid" />
+            <label for="name">Name of the investor :</label>
+            <input type="text" name="name" id="name" />
+            <!-- <input type="text" name="business-idea" id="business-idea" /> -->
+            <label for="investment-amount"
+              >Amount ready to invest in the idea :</label
+            >
+            <input
+              type="number"
+              name="investment-amount"
+              id="investment-amount"
+            />
+            <label for="equity-percentage"
+              >Ask Percentage of Equity for a company :
+            </label>
+            <input
+              type="number"
+              name="equity-percentage"
+              id="equity-percentage"
+            />
+            <span class="btn submit-investment">Submit Investment</span>
           </div>
         </div>
       </div>
